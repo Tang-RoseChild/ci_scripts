@@ -67,7 +67,7 @@ for ip in ips:
     get_remote_disk_info(kws_dict)
 
     # check file exists or not
-    remote_cmd = r'sshpass -p {0} ssh jenkins@{1} ls -lR {2} | grep {3}'
+    remote_cmd = r'sshpass -p {0} ssh jenkins@{1} ls -lR {2} | grep ^d | grep {3}'
     #print(remote_cmd)
     result_Popen = subprocess.Popen(remote_cmd.format(password,ip[1],jenkins_build_path,tagname),
                                     shell=True,
