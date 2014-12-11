@@ -1,0 +1,12 @@
+# gerrit
+  Q1:access setting
+    1.1 access controls in Gerrit are group based,can not be granted to individual users ------ from <gerrit document>
+  
+    ## 名词解释  ##
+    ACL: access control list(访问控制列表)
+    LDAP: 轻量级目录访问协议
+    上面两者是种管理类的理念
+  Q2:API
+  
+  Q3:establish a server myself
+  
